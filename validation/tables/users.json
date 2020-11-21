@@ -1,0 +1,47 @@
+{
+     "name": "users",
+     "columns": {
+          "uid": {
+               "type": "number",
+               "required": false,
+               "primaryKey": true
+          },
+          "fname": {
+               "type": "string",
+               "size": 255,
+               "required": true
+          },
+          "lname": {
+               "type": "string",
+               "size": 255,
+               "required": true
+          },
+          "email": {
+               "type": "string",
+               "size": 255,
+               "required": true
+          },
+          "pass": {
+               "type": "string",
+               "size": -1,
+               "required": true
+          },
+          "login_cookie": {
+               "type": "string",
+               "size": -1,
+               "required": false
+          },
+          "img_url": {
+               "type": "string",
+               "size": -1,
+               "required": false
+          },
+          "usergroup": {
+               "type": "number",
+               "size": 3,
+               "values": {"user": 1, "dev": 2, "admin": 3},
+               "required": true,
+               "default": 1
+          }
+     }
+}

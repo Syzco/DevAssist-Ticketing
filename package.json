@@ -1,0 +1,35 @@
+{
+  "name": "database.proj",
+  "version": "1.0.0",
+  "description": "A simple web application to allow developers and consumers to track bugs with projects.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "setup": "node setup.js"
+  },
+  "author": "Braden Cariaga & Andrew Martinez",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@popperjs/core": "^2.5.4",
+    "axios": "^0.21.0",
+    "bcrypt": "^5.0.0",
+    "bootstrap": "^4.5.3",
+    "cookie": "^0.4.1",
+    "dotenv": "^8.2.0",
+    "jquery": "^3.5.1",
+    "jquery-mousewheel": "^3.1.13",
+    "jsonwebtoken": "^8.5.1",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "mysql": "^2.18.1",
+    "next": "^9.5.4",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "swr": "^0.3.8"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.4.0"
+  }
+}

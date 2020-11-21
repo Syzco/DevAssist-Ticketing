@@ -1,0 +1,18 @@
+{
+     "name": "relationships",
+     "columns": {
+          "rid": {
+               "type": "number",
+               "required": false,
+               "primaryKey": true
+          },
+          "pid": {
+               "type": "number",
+               "required": true
+          },
+          "uid": {
+               "type": "number",
+               "required": true
+          }
+     }
+}

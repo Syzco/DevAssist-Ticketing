@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@Components/*": ["components/*"],
+            "@Validation/*": ["validation/*"],
+            "@Setup/*": ["setup/*"],
+            "@Assets/*": ["assets/*"]
+        }
+    }
+}

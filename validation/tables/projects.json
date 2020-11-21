@@ -1,0 +1,29 @@
+{
+     "name": "projects",
+     "columns": {
+          "pid": {
+               "type": "number",
+               "required": false,
+               "primaryKey": true
+          },
+          "title": {
+               "type": "string",
+               "size": 255,
+               "required": true
+          },
+          "description": {
+               "type": "string",
+               "size": -1,
+               "required": true
+          },
+          "img_url": {
+               "type": "string",
+               "size": -1,
+               "required": false
+          },
+          "author": {
+               "type": "number",
+               "required": true
+          }
+     }
+}

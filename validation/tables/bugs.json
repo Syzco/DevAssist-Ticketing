@@ -1,0 +1,28 @@
+{
+     "name": "bugs",
+     "columns": {
+          "bid": {
+               "type": "number",
+               "required": false,
+               "primaryKey": true
+          },
+          "title": {
+               "type": "string",
+               "size": 255,
+               "required": true
+          },
+          "description": {
+               "type": "string",
+               "size": -1,
+               "required": true
+          },
+          "creator": {
+               "type": "number",
+               "required": true
+          },
+          "project": {
+               "type": "number",
+               "required": true
+          }
+     }
+}

@@ -1,0 +1,28 @@
+{
+     "name": "comments",
+     "columns": {
+          "cid": {
+               "type": "number",
+               "required": false,
+               "primaryKey": true
+          },
+          "comment": {
+               "type": "string",
+               "size": -1,
+               "required": true
+          },
+          "description": {
+               "type": "string",
+               "size": -1,
+               "required": true
+          },
+          "creator": {
+               "type": "number",
+               "required": true
+          },
+          "bug": {
+               "type": "number",
+               "required": true
+          }
+     }
+}
