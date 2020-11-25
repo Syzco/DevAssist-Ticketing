@@ -1,5 +1,4 @@
 import '@Assets/vendor/bootstrap/bootstrap.min.css'
-import '@Assets/vendor/icon-awesome/css/font-awesome.min.css'
 import '@Assets/vendor/icon-line/css/simple-line-icons.css'
 import '@Assets/vendor/icon-line-pro/style.css'
 import '@Assets/vendor/icon-etlinefont/style.css'
@@ -21,8 +20,20 @@ import Footer from '@Components/footer.js'
 import isLoggedIn from './api/auth/signedin.js'
 import Spinner from '@Components/spinner.js'
 
+import { useEffect } from "react";
+
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
+     useEffect(() => {
+          import("jquery").then($ => {
+               // jQuery must be installed to the `window`:
+               window.$ = window.jQuery = $;
+               import("popper.js")
+               import("bootstrap");
+               return;
+          });
+     }, []);
+
      let {user, isLoading, isError} = isLoggedIn();
 
      if (isLoading) {

@@ -5,7 +5,8 @@
             "@Components/*": ["components/*"],
             "@Validation/*": ["validation/*"],
             "@Setup/*": ["setup/*"],
-            "@Assets/*": ["assets/*"]
+            "@Assets/*": ["assets/*"],
+            "@Utils/*": ["utils/*"]
         }
     }
 }

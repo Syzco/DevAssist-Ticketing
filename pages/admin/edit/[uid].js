@@ -28,7 +28,7 @@ function EditProfile() {
           const fetcher = url => axios.get(url).then(res => res.data);
           const { data, error } = useSWR(`/api/users/${uid}`, fetcher, {
                revalidateOnMount: true,
-               shouldRetryOnError: false,
+               shouldRetryOnError: true,
                initialData: {
                     fname: "",
                     lname: "",
