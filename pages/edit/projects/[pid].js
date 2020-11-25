@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import useSWR, {mutate} from 'swr'
 import axios from 'axios'
+import {capitalize, parseSerialized, formatTime} from '@Utils/misc.js'
 
 function EditProject(props) {
      if (props.user.usergroup != "dev" && props.user.usergroup != "admin") {
@@ -38,31 +39,12 @@ function EditProject(props) {
           error: ""
      })
 
-     const capitalize = (author) => {
-          let temp = author.split(" ");
-               temp.forEach((v, i) => {
-                    temp[i] = v.replace(/^\w/, c => c.toUpperCase());
-               })
-          return temp.join(" ");
-     }
-
-     const formatTime = (time) => {
-          let t = time.split(/[- : T Z]/);
-          let d = new Date(t[0], t[1], t[2], t[3], t[4], t[5]);
-
-          return (((d.getHours()%12 == 0) ? "12" : d.getHours()%12) + ":" + d.getMinutes() + " " + ((d.getHours()/12 > 1) ? "pm" : "am") + " on " + d.getMonth() + "-" + d.getDay() + "-" + d.getFullYear());
-     }
-
-     const parseSerialized = (text) => {
-          return text.replace("&#39;", "'")
-     }
-
      const getCurrentProject = (pid) => { 
           if (typeof pid == 'undefined') pid = "";
           const fetcher = url => axios.get(url).then(res => res.data);
           const { data, error } = useSWR(`/api/projects/${pid}`, fetcher, {
                revalidateOnMount: true,
-               shouldRetryOnError: false,
+               shouldRetryOnError: true,
                initialData: {
                     title: "",
                     description: "",
