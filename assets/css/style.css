@@ -20217,41 +20217,6 @@ li:last-child .u-dot-line-v2::after, li:last-child
 }
 
 /*------------------------------------
-  Marker-bg
-------------------------------------*/
-.u-marker-bg-primary, .u-marker-bg-green, .u-marker-bg-black, .u-marker-bg-white, .u-marker-bg-red, .u-marker-bg-yellow {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: 0 50%;
-  background-size: 100% 70%;
-  white-space: nowrap;
-}
-
-.u-marker-bg-primary {
-  background-image: url('../img/bg/marker/marker-bg-primary.png');
-}
-
-.u-marker-bg-green {
-  background-image: url('../img/bg/marker/marker-bg-green.png');
-}
-
-.u-marker-bg-black {
-  background-image: url('../img/bg/marker/marker-bg-black.png');
-}
-
-.u-marker-bg-white {
-  background-image: url('../img/bg/marker/marker-bg-white.png');
-}
-
-.u-marker-bg-red {
-  background-image: url('../img/bg/marker/marker-bg-red.png');
-}
-
-.u-marker-bg-yellow {
-  background-image: url('../img/bg/marker/marker-bg-yellow.png');
-}
-
-/*------------------------------------
   Tooltips
 ------------------------------------*/
 .u-tooltip--v1 {
@@ -26742,10 +26707,6 @@ pre[class*="language-"] .toolbar-item a {
   transition-timing-function: ease-in;
 }
 
-.js-carousel {
-  background: url('../img/preloaders/preloader-black.svg') no-repeat 50% 50%;
-}
-
 .js-carousel .js-next,
 .js-carousel .js-prev {
   opacity: 0;
@@ -28399,37 +28360,6 @@ pre[class*="language-"] .toolbar-item a {
 }
 
 /*------------------------------------
-  Images Grid
-------------------------------------*/
-.g-bg-grid-v1--before::before {
-  background-image: url('../img/bg/grid/wave.png');
-}
-
-.g-bg-grid-v2--before::after {
-  background-image: url('../img/bg/grid/tile-left.png');
-}
-
-.g-bg-grid-v3--before::after {
-  background-image: url('../img/bg/grid/tile-right.png');
-}
-
-.g-bg-grid-v4--before::after {
-  background-image: url('../img/bg/grid/diagonal-left.png');
-}
-
-.g-bg-grid-v5--before::after {
-  background-image: url('../img/bg/grid/diagonal-right.png');
-}
-
-.g-bg-grid-v6--before::after {
-  background-image: url('../img/bg/grid/zigzag-left.png');
-}
-
-.g-bg-grid-v7--before::after {
-  background-image: url('../img/bg/grid/zigzag-right.png');
-}
-
-/*------------------------------------
   Covers
 ------------------------------------*/
 .g-bg-cover {
@@ -28465,13 +28395,6 @@ pre[class*="language-"] .toolbar-item a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-/*------------------------------------
-  Background Patterns
-------------------------------------*/
-.g-bg-pattern-green {
-  background-image: url("../img/bg/pattern--green.png");
 }
 
 /*------------------------------------
@@ -52694,4 +52617,24 @@ input:checked + .g-parent .g-opacity-1--parent-sibling-checked {
 .g-placeholder-gray-light-v11--disabled:disabled::-webkit-input-placeholder {
   opacity: 1;
   color: #acbdbd;
+}
+
+.account-dropdown, .make-pointer {
+     cursor: pointer;
+}
+
+#profileMenu {
+     z-index: 9999;
+}
+
+.modal {
+     z-index: 9999;
+}
+
+.text-align-center {
+     text-align: center;
+}
+
+.display-none {
+     display: none;
 }
