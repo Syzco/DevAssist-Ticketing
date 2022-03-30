@@ -1,10 +1,10 @@
 # Introduction
-//Write some Introduction Here
+This customer relationship manager is designed for use by developers of multiple projects to support those projects and their relationship with the end users.
 
-# Purpose
-The main objective of this project was to demonstrate and practice working with an SQL database. This project utilizes Next.js and it's built in API service to display a ticketing system. The ticketing system is designed for developers to utilize while supporting several projects with multiple end users.
+## Purpose
+The main objective of this project was to demonstrate and practice working with an SQL database. This project utilizes Next.js and it's built in API service to display a ticketing system.
 
-# Dependencies
+## Dependencies
 This application requires Node.js and a working MySQL server with a database created.
 
 ## Setup, Installation, and Startup
